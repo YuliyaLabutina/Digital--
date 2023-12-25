@@ -1,0 +1,149 @@
+footer {
+  background-color: #e3e3e3;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .footer-content-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+    @media only screen and (max-device-width: 630px) {
+      .list-none {
+        display: none;
+      }
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    li {
+      display: flex;
+      flex-flow: column;
+      @media only screen and (max-device-width: 630px) {
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      a:first-child {
+        margin-bottom: 10px;
+      }
+      a {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 400;
+        border-bottom: 1px solid transparent;
+        @media only screen and (max-device-width: 1366px) {
+          font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1366 - 300)));
+        }
+      }
+      .contact {
+        margin-bottom: 30px;
+      }
+      a:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+
+    .phones {
+      font-size: 18px;
+      color: #000000;
+      font-weight: 400;
+      @media only screen and (max-device-width: 1366px) {
+        font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1366 - 300)));
+      }
+    }
+
+    .links {
+      @media only screen and (min-device-width: 631px) {
+        display: none;
+      }
+      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      li {
+        text-align: center;
+        margin-right: 0;
+        a {
+          border-bottom: 1px solid transparent;
+        }
+        a:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      @media only screen and (max-device-width: 360px) {
+        display: block;
+        li {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .logo-footer {
+    margin-bottom: 30px;
+    @media only screen and (max-device-width: 630px) {
+      text-align: center;
+      margin-right: 0;
+    }
+    span {
+      font-size: 28px;
+      color: #00aeef;
+      font-weight: 700;
+      @media only screen and (max-device-width: 1366px) {
+        font-size: calc(22px + (28 - 22) * ((100vw - 300px) / (1366 - 300)));
+      }
+    }
+    p {
+      font-size: 11px;
+      color: #000000;
+      font-weight: 300;
+      @media only screen and (max-device-width: 1366px) {
+        font-size: calc(8px + (11 - 8) * ((100vw - 300px) / (1366 - 300)));
+      }
+    }
+  }
+  .protection {
+    font-size: 11px;
+    color: #000000;
+    font-weight: 300;
+  }
+  .icons-messanger {
+    width: 147px;
+    li {
+      width: 24px;
+      height: 24px;
+      float: left;
+      cursor: pointer;
+      margin-right: 6.5px;
+      background-image: url(/img/footer/sprait.png);
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+    }
+    li:hover {
+      filter: grayscale(0);
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+    .facebook {
+      background-position: 0 0;
+    }
+    .vk {
+      background-position: -30.5px 0;
+    }
+    .classmates {
+      background-position: -61px 0;
+    }
+    .youtube {
+      background-position: -91px 0;
+    }
+    .inst {
+      background-position: -121px 0;
+    }
+  }
+}

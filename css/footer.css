@@ -1,0 +1,179 @@
+footer {
+  background-color: #e3e3e3;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+footer .footer-content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px;
+}
+@media only screen and (max-device-width: 630px) {
+  footer .footer-content-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  footer .footer-content-list .list-none {
+    display: none;
+  }
+}
+footer .footer-content-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+@media only screen and (max-device-width: 630px) {
+  footer .footer-content-list li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+footer .footer-content-list li a:first-child {
+  margin-bottom: 10px;
+}
+footer .footer-content-list li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+}
+@media only screen and (max-device-width: 1366px) {
+  footer .footer-content-list li a {
+    font-size: calc(12px + 2 * (100vw - 300px) / 1066);
+  }
+}
+footer .footer-content-list li .contact {
+  margin-bottom: 30px;
+}
+footer .footer-content-list li a:hover {
+  border-bottom: 1px solid black;
+}
+footer .footer-content-list .phones {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400;
+}
+@media only screen and (max-device-width: 1366px) {
+  footer .footer-content-list .phones {
+    font-size: calc(14px + 4 * (100vw - 300px) / 1066);
+  }
+}
+footer .footer-content-list .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media only screen and (min-device-width: 631px) {
+  footer .footer-content-list .links {
+    display: none;
+  }
+}
+footer .footer-content-list .links li {
+  text-align: center;
+  margin-right: 0;
+}
+footer .footer-content-list .links li a {
+  border-bottom: 1px solid transparent;
+}
+footer .footer-content-list .links li a:hover {
+  border-bottom: 1px solid black;
+}
+footer .footer-content-list .links li:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-device-width: 360px) {
+  footer .footer-content-list .links {
+    display: block;
+  }
+  footer .footer-content-list .links li {
+    margin-right: 0;
+  }
+}
+footer .logo-footer {
+  margin-bottom: 30px;
+}
+@media only screen and (max-device-width: 630px) {
+  footer .logo-footer {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+footer .logo-footer span {
+  font-size: 28px;
+  color: #00aeef;
+  font-weight: 700;
+}
+@media only screen and (max-device-width: 1366px) {
+  footer .logo-footer span {
+    font-size: calc(22px + 6 * (100vw - 300px) / 1066);
+  }
+}
+footer .logo-footer p {
+  font-size: 11px;
+  color: #000000;
+  font-weight: 300;
+}
+@media only screen and (max-device-width: 1366px) {
+  footer .logo-footer p {
+    font-size: calc(8px + 3 * (100vw - 300px) / 1066);
+  }
+}
+footer .protection {
+  font-size: 11px;
+  color: #000000;
+  font-weight: 300;
+}
+footer .icons-messanger {
+  width: 147px;
+}
+footer .icons-messanger li {
+  width: 24px;
+  height: 24px;
+  float: left;
+  cursor: pointer;
+  margin-right: 6.5px;
+  background-image: url(/img/footer/sprait.png);
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+footer .icons-messanger li:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+footer .icons-messanger li:last-child {
+  margin-right: 0;
+}
+footer .icons-messanger .facebook {
+  background-position: 0 0;
+}
+footer .icons-messanger .vk {
+  background-position: -30.5px 0;
+}
+footer .icons-messanger .classmates {
+  background-position: -61px 0;
+}
+footer .icons-messanger .youtube {
+  background-position: -91px 0;
+}
+footer .icons-messanger .inst {
+  background-position: -121px 0;
+}

@@ -1,0 +1,148 @@
+.promo-slider .background-slider {
+  width: 100%;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.promo-slider .background-slider .slider-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  height: 100%;
+}
+.promo-slider .background-slider .slider-line .slider_img {
+  height: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.promo-slider .background-slider .content-promo {
+  width: 1200px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+@media only screen and (max-device-width: 1366px) {
+  .promo-slider .background-slider .content-promo {
+    width: calc(300px + 900 * (100vw - 300px) / 1066);
+  }
+}
+.promo-slider .background-slider .content-promo .slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  margin-top: 70px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .promo-slider .background-slider .content-promo .slider-wrapper {
+    -webkit-column-gap: calc(5px + 5 * (100vw - 300px) / 1066);
+       -moz-column-gap: calc(5px + 5 * (100vw - 300px) / 1066);
+            column-gap: calc(5px + 5 * (100vw - 300px) / 1066);
+  }
+}
+.promo-slider .background-slider .content-promo .slider-wrapper .slider-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: transparent;
+  border: 0.1px solid #878787;
+}
+@media only screen and (max-device-width: 1366px) {
+  .promo-slider .background-slider .content-promo .slider-wrapper .slider-dot {
+    width: calc(7px + 7 * (100vw - 300px) / 1066);
+    height: calc(7px + 7 * (100vw - 300px) / 1066);
+  }
+}
+.promo-slider .background-slider .content-promo .slider-wrapper .active-dot {
+  background-color: #878787;
+}
+.promo-slider .background-slider .content-promo .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.promo-slider .background-slider .content-promo button {
+  border: none;
+  background: none;
+}
+.promo-slider .background-slider .content-promo .slider-prev {
+  margin-right: 20px;
+}
+.promo-slider .background-slider .content-promo .text-promo {
+  opacity: 0.831;
+  width: 514px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.831372549);
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 33px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .promo-slider .background-slider .content-promo .text-promo {
+    width: calc(200px + 314 * (100vw - 300px) / 1066);
+    height: calc(80px + 100 * (100vw - 300px) / 1066);
+    padding-left: calc(20px + 20 * (100vw - 300px) / 1066);
+    padding-right: calc(20px + 20 * (100vw - 300px) / 1066);
+    padding-top: calc(15px + 18 * (100vw - 300px) / 1066);
+  }
+}
+@media only screen and (max-device-width: 1050px) {
+  .promo-slider .background-slider .content-promo .text-promo {
+    left: 50%;
+  }
+}
+.promo-slider .background-slider .content-promo .text-promo .title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000125;
+  font-weight: 600;
+  z-index: 3;
+}
+@media only screen and (max-device-width: 1366px) {
+  .promo-slider .background-slider .content-promo .text-promo .title {
+    font-size: calc(14px + 16 * (100vw - 300px) / 1066);
+  }
+}
+.promo-slider .background-slider .content-promo .text-promo .description {
+  margin-top: 22px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000800;
+  font-weight: 300;
+  z-index: 3;
+  text-align: justify;
+}
+@media only screen and (max-device-width: 1366px) {
+  .promo-slider .background-slider .content-promo .text-promo .description {
+    font-size: calc(10px + 10 * (100vw - 300px) / 1066);
+    line-height: calc(15px + 15 * (100vw - 300px) / 1066);
+    margin-bottom: calc(0px + 20 * (100vw - 300px) / 1066);
+    margin-top: calc(0px + 22 * (100vw - 300px) / 1066);
+  }
+}

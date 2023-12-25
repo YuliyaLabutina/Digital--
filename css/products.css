@@ -1,0 +1,172 @@
+h2 {
+  margin: 0;
+  margin-bottom: 63px;
+  font-size: 30px;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+}
+@media only screen and (max-device-width: 1366px) {
+  h2 {
+    margin-bottom: calc(40px + 23 * (100vw - 300px) / 1066);
+  }
+}
+
+.our-products {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 95px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .our-products {
+    margin-top: calc(50px + 45 * (100vw - 300px) / 1066);
+  }
+}
+.our-products .product-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 32px;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  margin: 0 30px;
+}
+.our-products .product-wrapper li {
+  width: 368px;
+  height: 262px;
+  position: relative;
+}
+.our-products .product-wrapper .standard .standard-img {
+  height: 150px;
+  width: 100%;
+}
+.our-products .product-wrapper .standard .standard-img img {
+  height: 100%;
+  width: 100%;
+}
+.our-products .product-wrapper .description-product {
+  text-align: center;
+  border: 1px solid #878787;
+  height: 111px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.our-products .product-wrapper .description-product p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.our-products .product-wrapper .description-product p a {
+  color: #000000;
+}
+.our-products .product-wrapper .description-product p a:hover {
+  border-bottom: 1px solid black;
+}
+.our-products .product-wrapper .description-product button {
+  margin: 0;
+  border-radius: 4px;
+  background-color: #00aeef;
+  border: 1px solid transparent;
+  padding: 7px 40px;
+  cursor: pointer;
+}
+.our-products .product-wrapper .description-product button a {
+  color: white;
+}
+.our-products .product-wrapper .description-product button:hover {
+  background-color: white;
+  border: 1px solid #00aeef;
+}
+.our-products .product-wrapper .description-product button:hover a {
+  color: #00aeef;
+}
+.our-products .product-wrapper .fill {
+  position: relative;
+}
+.our-products .product-wrapper .fill .wrapper-img {
+  background: #000000;
+  display: inline-block;
+  height: 262px;
+}
+.our-products .product-wrapper .fill img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.502;
+}
+@media only screen and (max-device-width: 580px) {
+  .our-products .product-wrapper .fill img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.our-products .product-wrapper .fill .description-product-fill {
+  height: auto;
+  width: 100%;
+  border: none;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.our-products .product-wrapper .fill .description-product-fill p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.our-products .product-wrapper .fill .description-product-fill p a {
+  color: #ffffff;
+}
+.our-products .product-wrapper .fill .description-product-fill p a:hover {
+  border-bottom: 1px solid white;
+}
+.our-products .product-wrapper .fill .description-product-fill button {
+  margin-bottom: 20px;
+}
+.our-products .innovation {
+  position: absolute;
+  margin: 0;
+  background-color: #754c24;
+  border: transparent;
+  padding: 12px 24px;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+}
+.our-products .development {
+  position: absolute;
+  margin: 0;
+  background-color: #b48a0a;
+  border: transparent;
+  padding: 15px 20px;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 26px;
+}
+.our-products .display {
+  display: none;
+}

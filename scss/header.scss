@@ -1,0 +1,201 @@
+header {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin: 0 20px;
+  .header {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-logo {
+    span {
+      font-size: 28px;
+      color: #00aeef;
+      font-weight: 700;
+    }
+    p {
+      font-size: 11px;
+      color: #000000;
+      font-weight: 300;
+    }
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    @media only screen and (max-device-width: 800px) {
+      display: none;
+    }
+    li {
+      font-size: 14px;
+      color: #000000;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-right: 55px;
+      text-align: center;
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+      @media only screen and (max-device-width: 1366px) {
+        margin-right: calc(15px + (55 - 15) * ((100vw - 300px) / (1366 - 300)));
+      }
+      button {
+        border-radius: 4px;
+        background-color: #00aeef;
+        border: 1px solid transparent;
+        color: white;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+        a {
+          color: white;
+        }
+      }
+      button:hover {
+        background-color: white;
+        border: 1px solid #00aeef;
+        cursor: pointer;
+        a {
+          color: #00aeef;
+        }
+      }
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+    .menu-list {
+      a {
+        color: #000000;
+      }
+    }
+    .menu-list:hover {
+      border-bottom: 1px solid black;
+    }
+  }
+
+  .product-list {
+    position: relative;
+    z-index: 3;
+    display: none;
+    li {
+      font-size: 16px;
+      color: #000000;
+      font-weight: 300;
+      text-transform: none;
+      margin-bottom: 33px;
+      white-space: nowrap;
+      width: min-content;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+    .drop-down-list {
+      border-bottom: 1px solid transparent;
+    }
+    .drop-down-list:hover {
+      border-bottom: 1px solid black;
+    }
+  }
+  .drop-down-menu {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    z-index: 1;
+    margin-top: 25px;
+    background-color: white;
+    padding: 37px 35px;
+    box-shadow: 0 0 7px #000;
+    width: 409px;
+  }
+  .product-list::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 30px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid white;
+    z-index: 2;
+  }
+  .products-header:hover .product-list {
+    display: block;
+  }
+  .products-header:active .product-list {
+    display: block;
+  }
+
+  //мобильное
+
+  .main-nav {
+    float: left;
+    overflow: hidden;
+    @media only screen and (min-device-width: 801px) {
+      display: none;
+    }
+
+  }
+  .main-nav-toggle {
+    z-index: 2;
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    background-position: center;
+    padding: 0;
+  }
+  .main-nav-toggle.toggle-closed {
+    background-image: url(/img/header/menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .main-nav-toggle.toggle-opened {
+    background-image: url(/img/header/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .site-navigation.opened {
+    display: block;
+    list-style: none;
+    margin: 0;
+  }
+  .site-navigation.closed {
+    display: none;
+  }
+  .site-navigation {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    z-index: 6;
+  }
+  .site-navigation-item {
+    background: white;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    
+    a {
+    color: black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid transparent;
+  }
+  a:hover{
+    border-bottom: 1px solid black;
+  }
+
+  }
+   
+ 
+}

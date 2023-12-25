@@ -1,0 +1,31 @@
+.description-work {
+  margin: 0 auto;
+  margin-top: 155px;
+  text-align: center;
+  max-width: 1200px;
+  padding: 0 25px;
+  @media only screen and (max-device-width: 1366px) {
+    margin-top: calc(0px + (155 - 0) * ((100vw - 300px) / (1366 - 300)));
+  }
+  h1 {
+    font-size: 36px;
+    color: #000000;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 55px;
+    @media only screen and (max-device-width: 1366px) {
+      font-size: calc(22px + (36 - 22) * ((100vw - 300px) / (1366 - 300)));
+      margin-bottom: calc(15px + (55 - 15) * ((100vw - 300px) / (1366 - 300)));
+    }
+  }
+  p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 300;
+    text-align: left;
+    @media only screen and (max-device-width: 1365px) {
+      font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1366 - 300)));
+      text-align: center;
+    }
+  }
+}

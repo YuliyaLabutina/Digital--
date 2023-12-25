@@ -1,0 +1,33 @@
+@import url(/css/header.css);
+@import url(/css/slider.css);
+@import url(/css/descriptionWork.css);
+@import url(/css/products.css);
+@import url(/css/advantages.css);
+@import url(/css/customers.css);
+@import url(/css/footer.css);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+nav{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.anchor {
+  height: 0;
+  margin: 0;
+  padding: 0;
+}

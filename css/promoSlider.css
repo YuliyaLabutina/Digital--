@@ -1,0 +1,116 @@
+.promo-slider {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.promo-slider .swiper-slide {
+  height: 460px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.promo-slider .one {
+  background-image: url(/img/sectionSlider/one.webp);
+  background-position: 50% 50%;
+}
+.promo-slider .two {
+  background-image: url(/img/sectionSlider/two.webp);
+  background-position: 70% 50%;
+}
+.promo-slider .three {
+  background-image: url(/img/sectionSlider/three.webp);
+  background-position: 50% 50%;
+}
+.promo-slider .four {
+  background-image: url(/img/sectionSlider/four.webp);
+  background-position: 70% 50%;
+}
+.promo-slider .five {
+  background-image: url(/img/sectionSlider/five.webp);
+  background-position: 70% 50%;
+}
+.promo-slider .promo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 1200px;
+}
+.promo-slider .promo .promo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.promo-slider .promo .button-prev {
+  background-image: url(/img/sectionSlider/prev.svg);
+  width: 24px;
+  height: 40px;
+  cursor: pointer;
+}
+.promo-slider .promo .button-next {
+  background-image: url(/img/sectionSlider/next.svg);
+  width: 24px;
+  height: 40px;
+  cursor: pointer;
+}
+.promo-slider .text-promo {
+  opacity: 0.831;
+  width: 514px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.831372549);
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 33px;
+  padding-bottom: 20px;
+}
+.promo-slider .text-promo .title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000125;
+  font-weight: 600;
+  z-index: 3;
+}
+.promo-slider .text-promo .description {
+  margin-top: 22px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000800;
+  font-weight: 300;
+  z-index: 3;
+  text-align: justify;
+}
+.promo-slider .text-promo .swiper-pagination {
+  position: absolute;
+  bottom: -40%;
+  left: 15%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.promo-slider .text-promo .swiper-pagination .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: transparent;
+  border: 0.1px solid #878787;
+}
+.promo-slider .text-promo .swiper-pagination-bullet-active {
+  background-color: #d0d0d0 !important;
+}
+.promo-slider .text-promo .slider-wrapper {
+  margin-top: 100px;
+}
+
+.dhd {
+  height: 300px;
+}

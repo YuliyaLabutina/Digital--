@@ -1,0 +1,37 @@
+.description-work {
+  margin: 0 auto;
+  margin-top: 155px;
+  text-align: center;
+  max-width: 1200px;
+  padding: 0 25px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .description-work {
+    margin-top: calc(0px + 155 * (100vw - 300px) / 1066);
+  }
+}
+.description-work h1 {
+  font-size: 36px;
+  color: #000000;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 55px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .description-work h1 {
+    font-size: calc(22px + 14 * (100vw - 300px) / 1066);
+    margin-bottom: calc(15px + 40 * (100vw - 300px) / 1066);
+  }
+}
+.description-work p {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+  text-align: left;
+}
+@media only screen and (max-device-width: 1365px) {
+  .description-work p {
+    font-size: calc(12px + 6 * (100vw - 300px) / 1066);
+    text-align: center;
+  }
+}

@@ -1,0 +1,90 @@
+.customers {
+  margin-top: 95px;
+  background-color: #f9f9f9;
+  padding-bottom: 100px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .customers {
+    margin-top: calc(50px + 45 * (100vw - 300px) / 1066);
+    padding-bottom: calc(70px + 30 * (100vw - 300px) / 1066);
+  }
+}
+.customers h2 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .customers h2 {
+    padding-top: calc(30px + 30 * (100vw - 300px) / 1066);
+    padding-bottom: calc(30px + 30 * (100vw - 300px) / 1066);
+  }
+}
+.customers .slider-logo-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media only screen and (max-device-width: 1366px) {
+  .customers .slider-logo-wrapper {
+    padding-left: calc(15px + 35 * (100vw - 300px) / 1066);
+    padding-right: calc(15px + 35 * (100vw - 300px) / 1066);
+  }
+}
+.customers .slider-logo {
+  margin: 0 auto;
+  position: relative;
+}
+.customers .slider-logo .background-logo {
+  border-radius: 5px;
+  width: 143px;
+  height: 124px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 17.5px;
+}
+.customers .slider-logo .background-logo img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+.customers .slider-logo .background-logo img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+.customers .slider-logo .slider-line-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 143px;
+  height: auto;
+}
+.customers .next-button,
+.customers .prev-button {
+  width: 24px;
+  height: 50px;
+  background: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.customers .prev-button {
+  background-image: url(/img/customers/prev.svg);
+}
+.customers .next-button {
+  background-image: url(/img/customers/next.svg);
+}

@@ -1,0 +1,212 @@
+header {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin: 0 20px;
+}
+header .header {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-logo span {
+  font-size: 28px;
+  color: #00aeef;
+  font-weight: 700;
+}
+header .header-logo p {
+  font-size: 11px;
+  color: #000000;
+  font-weight: 300;
+}
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+@media only screen and (max-device-width: 800px) {
+  header .menu {
+    display: none;
+  }
+}
+header .menu li {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 55px;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+@media only screen and (max-device-width: 1366px) {
+  header .menu li {
+    margin-right: calc(15px + 40 * (100vw - 300px) / 1066);
+  }
+}
+header .menu li button {
+  border-radius: 4px;
+  background-color: #00aeef;
+  border: 1px solid transparent;
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header .menu li button a {
+  color: white;
+}
+header .menu li button:hover {
+  background-color: white;
+  border: 1px solid #00aeef;
+  cursor: pointer;
+}
+header .menu li button:hover a {
+  color: #00aeef;
+}
+header .menu li:last-child {
+  margin-right: 0;
+}
+header .menu .menu-list a {
+  color: #000000;
+}
+header .menu .menu-list:hover {
+  border-bottom: 1px solid black;
+}
+header .product-list {
+  position: relative;
+  z-index: 3;
+  display: none;
+}
+header .product-list li {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+  text-transform: none;
+  margin-bottom: 33px;
+  white-space: nowrap;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+header .product-list li:last-child {
+  margin-bottom: 0;
+}
+header .product-list .drop-down-list {
+  border-bottom: 1px solid transparent;
+}
+header .product-list .drop-down-list:hover {
+  border-bottom: 1px solid black;
+}
+header .drop-down-menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  z-index: 1;
+  margin-top: 25px;
+  background-color: white;
+  padding: 37px 35px;
+  -webkit-box-shadow: 0 0 7px #000;
+          box-shadow: 0 0 7px #000;
+  width: 409px;
+}
+header .product-list::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 30px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid white;
+  z-index: 2;
+}
+header .products-header:hover .product-list {
+  display: block;
+}
+header .products-header:active .product-list {
+  display: block;
+}
+header .main-nav {
+  float: left;
+  overflow: hidden;
+}
+@media only screen and (min-device-width: 801px) {
+  header .main-nav {
+    display: none;
+  }
+}
+header .main-nav-toggle {
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  background-position: center;
+  padding: 0;
+}
+header .main-nav-toggle.toggle-closed {
+  background-image: url(/img/header/menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header .main-nav-toggle.toggle-opened {
+  background-image: url(/img/header/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header .site-navigation.opened {
+  display: block;
+  list-style: none;
+  margin: 0;
+}
+header .site-navigation.closed {
+  display: none;
+}
+header .site-navigation {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  z-index: 6;
+}
+header .site-navigation-item {
+  background: white;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+}
+header .site-navigation-item a {
+  color: black;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+}
+header .site-navigation-item a:hover {
+  border-bottom: 1px solid black;
+}
